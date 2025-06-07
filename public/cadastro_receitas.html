@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro de Receitas</title>
+    <title>Gerenciamento de Receitas</title>
     <link rel="stylesheet" href="assets/css/styles.css"> 
 </head>
 <body>
@@ -21,82 +21,8 @@
     <footer>
         <p>Site criado por Vitor Marquez.</p> 
     </footer>
+    
     <script src="assets/scripts/app.js"></script>
-    <script>
-    // Script específico para a página de cadastro
-    document.addEventListener('DOMContentLoaded', () => {
-        const mainContent = document.getElementById('main-content');
-        const usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
-
-        if (!usuario || !usuario.admin) {
-            mainContent.innerHTML = `
-                <div class="error-message" style="text-align: center; padding: 40px;">
-                    <h1>Acesso Negado</h1>
-                    <p>Você precisa ser um administrador para acessar esta página.</p>
-                    <a href="index.html" class="btn">Voltar para a Página Inicial</a>
-                </div>
-            `;
-            return; // Interrompe a execução se não for admin
-        }
-
-        // Se for admin, insere o conteúdo do formulário e da tabela
-        mainContent.innerHTML = `
-            <h1>Gerenciamento de Receitas</h1>
-            <section class="form-container">
-                <h2>Formulário de Cadastro/Edição</h2>
-                <form id="formCadastroReceita">
-                    <div class="form-group">
-                        <label for="nome">Nome da Receita:</label>
-                        <input type="text" id="nome" name="nome" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="descricao_breve">Descrição Breve:</label>
-                        <textarea id="descricao_breve" name="descricao_breve" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="ingredientes">Ingredientes (um por linha):</label>
-                        <textarea id="ingredientes" name="ingredientes" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="preparo">Modo de Preparo:</label>
-                        <textarea id="preparo" name="preparo" required></textarea>
-                    </div>
-                    <div class="form-group">
-                        <label for="categoria">Categoria:</label>
-                        <input type="text" id="categoria" name="categoria" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="checkbox" id="destaque" name="destaque" value="true">
-                        <label for="destaque" style="display: inline; font-weight: normal;">Marcar como destaque?</label>
-                    </div>
-                    <div class="form-group">
-                        <label for="imagem_principal">URL da Imagem Principal:</label>
-                        <input type="url" id="imagem_principal" name="imagem_principal">
-                    </div>
-                    <button type="submit">Cadastrar Receita</button>
-                </form>
-            </section>
-            <section class="table-container">
-                <h2>Receitas Cadastradas</h2>
-                <table id="tabelaReceitas">
-                    <thead>
-                        <tr>
-                            <th>Nome</th>
-                            <th>Categoria</th>
-                            <th>Destaque</th>
-                            <th class="actions-column">Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        </tbody>
-                </table>
-            </section>
-        `;
-        
-        // Coloque aqui o restante do seu script de cadastro que manipula o form e a tabela
-        // (a lógica de fetch, submit, edit, delete que você já tinha)
-        // ...
-    });
-    </script>
+    <script src="assets/scripts/cadastro.js"></script>
 </body>
 </html>

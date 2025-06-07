@@ -2,7 +2,7 @@
   "receitas": [
     {
       "id": "1",
-      "nome": "Bolo de Cenoura com Cobertura de Chocolate Especial",
+      "nome": "Bolo de Cenoura com Cobertura de Chocolate",
       "descricao_breve": "Um clássico delicioso, fofinho e agora em destaque!",
       "descricao_completa": "Este bolo de cenoura é uma receita tradicional que agrada a todos. A massa fofinha e a cobertura cremosa de chocolate formam uma combinação irresistível. Ideal para servir em lanches, festas ou como sobremesa.",
       "ingredientes": [
@@ -12,39 +12,95 @@
         "2 xícaras de chá de açúcar",
         "2 xícaras de chá de farinha de trigo",
         "1 colher de sopa de fermento em pó",
-        "Para a cobertura:",
-        "1 lata de leite condensado",
-        "1 colher de sopa de manteiga",
-        "3 colheres de sopa de chocolate em pó",
+        "1 lata de leite condensado para a cobertura",
+        "1 colher de sopa de manteiga para a cobertura",
+        "3 colheres de sopa de chocolate em pó para a cobertura",
         "Chocolate granulado para decorar"
       ],
       "preparo": "No liquidificador, bata as cenouras, os ovos e o óleo. Em uma tigela, misture o açúcar e a farinha. Despeje a mistura do liquidificador na tigela e adicione o fermento, misturando delicadamente. Asse em forma untada e enfarinhada, em forno médio (180°C) pré-aquecido, por cerca de 40 minutos. Para a cobertura, leve todos os ingredientes ao fogo baixo, mexendo sempre, até desgrudar do fundo da panela. Cubra o bolo ainda morno e decore com granulado.",
       "tempo_preparo": "60 minutos",
       "rendimento": "12 porções",
       "categoria": "Bolos",
-      "tags": [
-        "bolo",
-        "cenoura",
-        "chocolate",
-        "lanche",
-        "especial"
-      ],
-      "rating": {
-        "value": 4.8,
-        "count": 255
-      },
+      "tags": ["bolo", "cenoura", "chocolate", "lanche", "festa"],
+      "rating": { "value": 4.8, "count": 255 },
       "destaque": true,
       "imagem_principal": "imagens/bolo_cenoura.jpg",
       "fotos_adicionais": [
-        {
-          "titulo": "Bolo pronto",
-          "src": "imagens/bolo_cenoura_fatia.jpg"
-        },
-        {
-          "titulo": "Ingredientes",
-          "src": "imagens/ingredientes_bolo_cenoura.jpg"
-        }
+        { "titulo": "Bolo pronto", "src": "imagens/bolo_cenoura_fatia.jpg" },
+        { "titulo": "Ingredientes", "src": "imagens/ingredientes_bolo_cenoura.jpg" }
       ]
+    },
+    {
+      "id": "2",
+      "nome": "Frango Xadrez Simples",
+      "descricao_breve": "Uma versão fácil e rápida do clássico prato oriental.",
+      "descricao_completa": "O frango xadrez é um prato chinês popular em todo o mundo. Esta receita simplificada mantém o sabor autêntico com ingredientes fáceis de encontrar, perfeita para um jantar rápido durante a semana.",
+      "ingredientes": [
+        "500g de peito de frango em cubos",
+        "1 pimentão verde em cubos",
+        "1 pimentão vermelho em cubos",
+        "1 cebola em cubos",
+        "1/4 xícara de molho de soja (shoyu)",
+        "2 colheres de sopa de amido de milho",
+        "1 colher de sopa de óleo de gergelim",
+        "2 dentes de alho picados",
+        "Amendoim torrado a gosto"
+      ],
+      "preparo": "Tempere o frango com um pouco de shoyu. Em uma tigela, misture o restante do shoyu com o amido de milho e 1/2 xícara de água. Aqueça uma panela Wok ou frigideira grande com óleo, doure o alho e o frango. Adicione os pimentões e a cebola e refogue até ficarem macios, mas ainda crocantes. Despeje a mistura de shoyu e cozinhe, mexendo, até o molho engrossar. Finalize com óleo de gergelim e sirva com amendoim por cima.",
+      "tempo_preparo": "30 minutos",
+      "rendimento": "4 porções",
+      "categoria": "Pratos Principais",
+      "tags": ["frango", "oriental", "rápido", "jantar"],
+      "rating": { "value": 4.6, "count": 180 },
+      "destaque": false,
+      "imagem_principal": "imagens/frango_xadrez.jpg"
+    },
+    {
+      "id": "3",
+      "nome": "Salada Caesar Clássica",
+      "descricao_breve": "A salada mais famosa do mundo, com um molho cremoso e crocantes croutons.",
+      "descricao_completa": "Uma salada refrescante e completa. A combinação de alface romana crocante, o molho caesar caseiro, queijo parmesão e croutons é simplesmente perfeita para uma entrada ou refeição leve.",
+      "ingredientes": [
+        "1 pé de alface romana",
+        "1 xícara de croutons",
+        "50g de queijo parmesão ralado na hora",
+        "Para o molho:",
+        "1 gema de ovo",
+        "1 dente de alho amassado",
+        "1/2 xícara de azeite de oliva",
+        "Suco de 1/2 limão siciliano",
+        "Sal e pimenta do reino a gosto"
+      ],
+      "preparo": "Lave e seque bem as folhas de alface. Para o molho, em uma tigela, bata a gema com o alho, suco de limão, sal e pimenta. Adicione o azeite em fio, batendo constantemente, até emulsionar e formar um molho cremoso. Rasgue as folhas de alface com as mãos, coloque em uma saladeira, regue com o molho, adicione os croutons e o queijo parmesão. Misture delicadamente e sirva imediatamente.",
+      "tempo_preparo": "20 minutos",
+      "rendimento": "3 porções",
+      "categoria": "Saladas",
+      "tags": ["salada", "leve", "clássico", "entrada"],
+      "rating": { "value": 4.9, "count": 312 },
+      "destaque": true,
+      "imagem_principal": "imagens/salada_caesar.jpg"
+    },
+    {
+      "id": "4",
+      "nome": "Pão de Queijo Mineiro",
+      "descricao_breve": "A autêntica receita de pão de queijo, crocante por fora e macio por dentro.",
+      "descricao_completa": "Este é o verdadeiro pão de queijo de Minas Gerais. Feito com polvilho azedo e muito queijo, é o acompanhamento perfeito para um café da tarde. A receita é simples e o resultado é delicioso.",
+      "ingredientes": [
+        "500g de polvilho azedo",
+        "250ml de leite integral",
+        "100ml de óleo",
+        "1 colher de chá de sal",
+        "2 ovos",
+        "300g de queijo minas padrão ou meia cura ralado"
+      ],
+      "preparo": "Ferva o leite, o óleo e o sal. Despeje sobre o polvilho em uma tigela e misture bem com uma colher. Deixe a massa amornar. Adicione os ovos um a um, misturando bem após cada adição. Por último, incorpore o queijo ralado e amasse até obter uma massa homogênea que não grude nas mãos. Faça bolinhas e asse em forno pré-aquecido a 200°C por cerca de 25 minutos ou até dourarem.",
+      "tempo_preparo": "50 minutos",
+      "rendimento": "20 pães de queijo",
+      "categoria": "Lanches",
+      "tags": ["pão de queijo", "mineiro", "lanche", "café"],
+      "rating": { "value": 5.0, "count": 540 },
+      "destaque": false,
+      "imagem_principal": "imagens/pao_de_queijo.jpg"
     }
   ],
   "usuarios": [

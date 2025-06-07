@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estatísticas de Receitas</title>
+    <link rel="stylesheet" href="assets/css/styles.css"> <style>
+        /* Adicionando alguns estilos básicos para a página de estatísticas */
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-bottom: 1px solid #dee2e6;
+        }
+        #logo-container img {
+            max-height: 50px;
+        }
+        nav a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: #007bff;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
+            text-align: center; /* Centralizar conteúdo da main */
+        }
+        .chart-container {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin: 20px auto; /* Centralizar o container do gráfico */
+            width: 80%;
+            max-width: 700px; /* Definir uma largura máxima */
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 30px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #343a40;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="index.html"><img src="imagens/logo.jpg" alt="Logo do Site"></a>
+        </div>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="cadastro_receitas.html">Cadastrar Receita</a>
+            <a href="estatisticas.html">Estatísticas</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Percentual de Receitas por Categoria</h1>
+        <div class="chart-container">
+            <canvas id="categoriasChart"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>Site criado por Vitor Marquez.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/scripts/estatisticas.js"></script>
+</body>
+</html>

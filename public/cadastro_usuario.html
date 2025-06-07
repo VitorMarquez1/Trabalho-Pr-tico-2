@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Diretório de Receitas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="index.html"><img src="imagens/logo.jpg" alt="Logo do Site"></a>
+        </div>
+        <nav>
+            <a href="index.html">Página Inicial</a>
+            <a href="login.html">Já tenho uma conta</a>
+        </nav>
+    </header>
+    <main>
+        <div class="form-container" style="max-width: 500px; margin: 40px auto;">
+            <h1>Crie sua Conta</h1>
+            <form id="formCadastroUsuario">
+                <div class="form-group">
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="login">Defina um Login:</label>
+                    <input type="text" id="login" name="login" required>
+                </div>
+                <div class="form-group">
+                    <label for="senha">Defina uma Senha:</label>
+                    <input type="password" id="senha" name="senha" required>
+                </div>
+                <button type="submit">Cadastrar</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>Site criado por Vitor Marquez.</p>
+    </footer>
+    <script src="assets/scripts/login.js"></script>
+</body>
+</html>

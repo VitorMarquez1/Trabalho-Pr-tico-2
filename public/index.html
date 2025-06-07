@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diretório de Receitas</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="logo-container">
+            <a href="index.html"><img src="imagens/logo.jpg" alt="Logo do Site"></a>
+        </div>
+        <div id="busca-container">
+            <input type="text" id="campo-busca" placeholder="Procurar receita por nome ou descrição">
+            <button type="button" id="btn-busca"><i class="fas fa-search"></i> Procurar</button>
+        </div>
+        <nav id="nav-principal">
+            </nav>
+    </header>
+
+    <main>
+        <section id="destaques">
+            <h2>Receitas em Destaque</h2>
+            <div id="carousel-featured-recipe">
+                <p class="loading-placeholder">Carregando destaques...</p>
+            </div>
+        </section>
+
+        <section id="receitas">
+            <h2>Todas as Receitas</h2>
+            <div id="gridReceitas" class="grid-receitas">
+                <p class="loading-placeholder">Carregando receitas...</p>
+            </div>
+        </section>
+        
+        <section id="visualizacao-avancada" style="margin-top: 40px;">
+            <h2>Estatísticas de Receitas</h2>
+            <div class="chart-container" style="width: 100%; max-width: 600px; margin: auto;">
+                 <canvas id="categoriasChart"></canvas>
+            </div>
+        </section>
+
+        <section id="info-autor" style="margin-top: 40px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
+            <hr>
+            <h3>Sobre o Autor do Projeto</h3>
+            <img src="imagens/avatar.png" alt="Foto do Vitor Marquez" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
+            <p><strong>Nome:</strong> Vitor Oliveira Marquez</p>
+            <p><strong>Matrícula:</strong> 897352</p>
+            <p><strong>Curso:</strong> Bacharelado em Sistemas de Informação</p>
+            <p><strong>Bio:</strong> Estudante da disciplina de Desenvolvimento de Interfaces Web</p>
+            <p>
+                <a href="#" style="margin: 0 10px;">GitHub</a> | 
+                <a href="#" style="margin: 0 10px;">LinkedIn</a>
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Site criado por Vitor Marquez.</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/scripts/estatisticas.js"></script>
+    <script src="assets/scripts/app.js"></script>
+</body>
+</html>

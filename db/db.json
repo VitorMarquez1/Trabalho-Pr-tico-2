@@ -1,0 +1,77 @@
+{
+  "receitas": [
+    {
+      "id": "1",
+      "nome": "Bolo de Cenoura com Cobertura de Chocolate Especial",
+      "descricao_breve": "Um clássico delicioso, fofinho e agora em destaque!",
+      "descricao_completa": "Este bolo de cenoura é uma receita tradicional que agrada a todos. A massa fofinha e a cobertura cremosa de chocolate formam uma combinação irresistível. Ideal para servir em lanches, festas ou como sobremesa.",
+      "ingredientes": [
+        "3 cenouras médias raladas",
+        "4 ovos",
+        "1 xícara de chá de óleo",
+        "2 xícaras de chá de açúcar",
+        "2 xícaras de chá de farinha de trigo",
+        "1 colher de sopa de fermento em pó",
+        "Para a cobertura:",
+        "1 lata de leite condensado",
+        "1 colher de sopa de manteiga",
+        "3 colheres de sopa de chocolate em pó",
+        "Chocolate granulado para decorar"
+      ],
+      "preparo": "No liquidificador, bata as cenouras, os ovos e o óleo. Em uma tigela, misture o açúcar e a farinha. Despeje a mistura do liquidificador na tigela e adicione o fermento, misturando delicadamente. Asse em forma untada e enfarinhada, em forno médio (180°C) pré-aquecido, por cerca de 40 minutos. Para a cobertura, leve todos os ingredientes ao fogo baixo, mexendo sempre, até desgrudar do fundo da panela. Cubra o bolo ainda morno e decore com granulado.",
+      "tempo_preparo": "60 minutos",
+      "rendimento": "12 porções",
+      "categoria": "Bolos",
+      "tags": [
+        "bolo",
+        "cenoura",
+        "chocolate",
+        "lanche",
+        "especial"
+      ],
+      "rating": {
+        "value": 4.8,
+        "count": 255
+      },
+      "destaque": true,
+      "imagem_principal": "imagens/bolo_cenoura.jpg",
+      "fotos_adicionais": [
+        {
+          "titulo": "Bolo pronto",
+          "src": "imagens/bolo_cenoura_fatia.jpg"
+        },
+        {
+          "titulo": "Ingredientes",
+          "src": "imagens/ingredientes_bolo_cenoura.jpg"
+        }
+      ]
+    }
+  ],
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Administrador",
+      "email": "admin@site.com",
+      "login": "admin",
+      "senha": "123",
+      "admin": true
+    },
+    {
+      "id": "2",
+      "nome": "Usuario Comum",
+      "email": "user@site.com",
+      "login": "user",
+      "senha": "123",
+      "admin": false
+    },
+    {
+      "id": "1762",
+      "nome": "vitor",
+      "email": "vitormarquez99@gmail.com",
+      "login": "123",
+      "senha": "123",
+      "admin": false
+    }
+  ],
+  "favoritos": []
+}

@@ -2,9 +2,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const formLogin = document.getElementById('formLogin');
     const formCadastroUsuario = document.getElementById('formCadastroUsuario');
 
-    const API_URL = 'http://localhost:3000/usuarios';
+    // Usa um caminho relativo para a URL da API
+    const API_URL = '/usuarios';
 
-    // Handler para o formulário de login
+    // Manipulador para o formulário de login
     if (formLogin) {
         formLogin.addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -20,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 if (users.length > 0) {
                     const user = users[0];
-                    // Salva informações do usuário na sessionStorage
+                    // Salva as informações do usuário no sessionStorage para manter a sessão
                     sessionStorage.setItem('usuarioLogado', JSON.stringify(user));
                     alert('Login realizado com sucesso!');
                     window.location.href = 'index.html'; // Redireciona para a home
@@ -34,15 +35,24 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // Handler para o formulário de cadastro de usuário
+    // Manipulador para o formulário de cadastro de usuário
     if (formCadastroUsuario) {
         formCadastroUsuario.addEventListener('submit', async (e) => {
             e.preventDefault();
+            
+            const senha = e.target.senha.value;
+            const confirmaSenha = e.target.confirma_senha.value;
+
+            if (senha !== confirmaSenha) {
+                alert('As senhas não coincidem. Por favor, tente novamente.');
+                return;
+            }
+
             const novoUsuario = {
                 nome: e.target.nome.value,
                 email: e.target.email.value,
                 login: e.target.login.value,
-                senha: e.target.senha.value,
+                senha: senha,
                 admin: false // Novos usuários nunca são administradores
             };
 
@@ -56,6 +66,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     return;
                 }
 
+                // Se o login estiver disponível, prossegue com o cadastro
                 const response = await fetch(API_URL, {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },

@@ -4,8 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diretório de Receitas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Montserrat:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Adicionando estilos para os botões do carrossel customizado */
+        #carousel-featured-recipe {
+            position: relative;
+        }
+        .carousel-control-prev, .carousel-control-next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            font-size: 2rem;
+            padding: 10px 15px;
+            cursor: pointer;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .carousel-control-prev { left: 15px; }
+        .carousel-control-next { right: 15px; }
+    </style>
 </head>
 <body>
     <header>
@@ -13,7 +40,7 @@
             <a href="index.html"><img src="imagens/logo.jpg" alt="Logo do Site"></a>
         </div>
         <div id="busca-container">
-            <input type="text" id="campo-busca" placeholder="Procurar receita por nome ou descrição">
+            <input type="text" id="campo-busca" placeholder="Procurar receita por nome...">
             <button type="button" id="btn-busca"><i class="fas fa-search"></i> Procurar</button>
         </div>
         <nav id="nav-principal">
@@ -37,31 +64,54 @@
         
         <section id="visualizacao-avancada" style="margin-top: 40px;">
             <h2>Estatísticas de Receitas</h2>
-            <div class="chart-container" style="width: 100%; max-width: 600px; margin: auto;">
+            <div class="chart-container" style="width: 100%; max-width: 700px; margin: auto; background: #fff; padding: 20px; border-radius: 8px;">
                  <canvas id="categoriasChart"></canvas>
             </div>
         </section>
 
-        <section id="info-autor" style="margin-top: 40px; text-align: center; background-color: #f8f9fa; padding: 20px; border-radius: 8px;">
-            <hr>
-            <h3>Sobre o Autor do Projeto</h3>
-            <img src="imagens/avatar.png" alt="Foto do Vitor Marquez" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover;">
-            <p><strong>Nome:</strong> Vitor Oliveira Marquez</p>
-            <p><strong>Matrícula:</strong> 897352</p>
-            <p><strong>Curso:</strong> Bacharelado em Sistemas de Informação</p>
-            <p><strong>Bio:</strong> Estudante da disciplina de Desenvolvimento de Interfaces Web</p>
-            <p>
-                <a href="#" style="margin: 0 10px;">GitHub</a> | 
-                <a href="#" style="margin: 0 10px;">LinkedIn</a>
-            </p>
-        </section>
+        <section id="info-autor">
+    <div class="author-info-container">
+        <h3>Informações do(a) Aluno(a)</h3>
+        <hr>
+        <div class="author-content-grid">
+            <div class="author-details">
+                <img src="imagens/avatar.png" alt="Foto do Autor">
+                <div>
+                    <h4>Autoria do Trabalho</h4>
+                    <p><strong>Aluno:</strong> Vitor Oliveira Marquez</p>
+                    <p><strong>Curso:</strong> Bacharelado em Sistemas de Informação</p>
+                    <p><strong>Matrícula:</strong> 897352</p>
+                </div>
+            </div>
+
+            <div class="author-bio">
+                <h4>Sobre</h4>
+                <p>
+                    Estudante da disciplina de Desenvolvimento de Interfaces Web na PUC Minas, aplicando conhecimentos de front-end para criar aplicações web dinâmicas e interativas.
+                </p>
+            </div>
+
+            <div class="author-social">
+                <h4>Redes Sociais</h4>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/vitor-marquez-771819218/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://github.com/VitorMarquez1" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer>
         <p>Site criado por Vitor Marquez.</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="assets/scripts/estatisticas.js"></script>
     <script src="assets/scripts/app.js"></script>
+    <script src="assets/scripts/estatisticas.js"></script>
 </body>
 </html>

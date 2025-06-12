@@ -3,8 +3,9 @@
     {
       "id": "1",
       "nome": "Bolo de Cenoura com Cobertura de Chocolate",
+      "imagem_principal": "imagens/bolo_cenoura.jpg",
       "descricao_breve": "Um clássico delicioso, fofinho e agora em destaque!",
-      "descricao_completa": "Este bolo de cenoura é uma receita tradicional que agrada a todos. A massa fofinha e a cobertura cremosa de chocolate formam uma combinação irresistível. Ideal para servir em lanches, festas ou como sobremesa.",
+      "descricao_completa": "Um clássico delicioso, fofinho e agora em destaque!",
       "ingredientes": [
         "3 cenouras médias raladas",
         "4 ovos",
@@ -12,29 +13,30 @@
         "2 xícaras de chá de açúcar",
         "2 xícaras de chá de farinha de trigo",
         "1 colher de sopa de fermento em pó",
-        "1 lata de leite condensado para a cobertura",
-        "1 colher de sopa de manteiga para a cobertura",
-        "3 colheres de sopa de chocolate em pó para a cobertura",
-        "Chocolate granulado para decorar"
+        "1 lata de leite condensado",
+        "1 colher de sopa de manteiga",
+        "3 colheres de sopa de chocolate em pó",
+        "Chocolate granulado"
       ],
-      "preparo": "No liquidificador, bata as cenouras, os ovos e o óleo. Em uma tigela, misture o açúcar e a farinha. Despeje a mistura do liquidificador na tigela e adicione o fermento, misturando delicadamente. Asse em forma untada e enfarinhada, em forno médio (180°C) pré-aquecido, por cerca de 40 minutos. Para a cobertura, leve todos os ingredientes ao fogo baixo, mexendo sempre, até desgrudar do fundo da panela. Cubra o bolo ainda morno e decore com granulado.",
+      "preparo": "No liquidificador, bata as cenouras, os ovos e o óleo. Em uma tigela, misture o açúcar e a farinha. Despeje a mistura na tigela e adicione o fermento. Asse em forma untada em forno médio pré-aquecido por 40 minutos. Para a cobertura, leve os ingredientes ao fogo baixo, mexendo sempre, até desgrudar do fundo da panela.",
       "tempo_preparo": "60 minutos",
       "rendimento": "12 porções",
-      "categoria": "Bolos",
-      "tags": ["bolo", "cenoura", "chocolate", "lanche", "festa"],
-      "rating": { "value": 4.8, "count": 255 },
-      "destaque": true,
-      "imagem_principal": "imagens/bolo_cenoura.jpg",
-      "fotos_adicionais": [
-        { "titulo": "Bolo pronto", "src": "imagens/bolo_cenoura_fatia.jpg" },
-        { "titulo": "Ingredientes", "src": "imagens/ingredientes_bolo_cenoura.jpg" }
-      ]
+      "categoria": "Sobremesas",
+      "tags": [
+        "Sobremesas"
+      ],
+      "rating": {
+        "value": 4.8,
+        "count": 255
+      },
+      "destaque": false
     },
     {
       "id": "2",
       "nome": "Frango Xadrez Simples",
+      "imagem_principal": "imagens/frango_xadrez.jpg",
       "descricao_breve": "Uma versão fácil e rápida do clássico prato oriental.",
-      "descricao_completa": "O frango xadrez é um prato chinês popular em todo o mundo. Esta receita simplificada mantém o sabor autêntico com ingredientes fáceis de encontrar, perfeita para um jantar rápido durante a semana.",
+      "descricao_completa": "O frango xadrez é um prato chinês popular. Esta receita simplificada mantém o sabor autêntico com ingredientes fáceis de encontrar.",
       "ingredientes": [
         "500g de peito de frango em cubos",
         "1 pimentão verde em cubos",
@@ -44,63 +46,540 @@
         "2 colheres de sopa de amido de milho",
         "1 colher de sopa de óleo de gergelim",
         "2 dentes de alho picados",
-        "Amendoim torrado a gosto"
+        "Amendoim torrado"
       ],
-      "preparo": "Tempere o frango com um pouco de shoyu. Em uma tigela, misture o restante do shoyu com o amido de milho e 1/2 xícara de água. Aqueça uma panela Wok ou frigideira grande com óleo, doure o alho e o frango. Adicione os pimentões e a cebola e refogue até ficarem macios, mas ainda crocantes. Despeje a mistura de shoyu e cozinhe, mexendo, até o molho engrossar. Finalize com óleo de gergelim e sirva com amendoim por cima.",
+      "preparo": "Tempere o frango com shoyu. Misture o restante do shoyu com amido de milho e água. Aqueça uma Wok, doure o alho e o frango. Adicione os pimentões e a cebola. Despeje a mistura de shoyu e cozinhe até engrossar. Finalize com óleo de gergelim.",
       "tempo_preparo": "30 minutos",
       "rendimento": "4 porções",
       "categoria": "Pratos Principais",
-      "tags": ["frango", "oriental", "rápido", "jantar"],
-      "rating": { "value": 4.6, "count": 180 },
-      "destaque": false,
-      "imagem_principal": "imagens/frango_xadrez.jpg"
+      "tags": [
+        "frango",
+        "oriental",
+        "jantar"
+      ],
+      "rating": {
+        "value": 4.6,
+        "count": 180
+      },
+      "destaque": false
     },
     {
       "id": "3",
       "nome": "Salada Caesar Clássica",
-      "descricao_breve": "A salada mais famosa do mundo, com um molho cremoso e crocantes croutons.",
-      "descricao_completa": "Uma salada refrescante e completa. A combinação de alface romana crocante, o molho caesar caseiro, queijo parmesão e croutons é simplesmente perfeita para uma entrada ou refeição leve.",
+      "imagem_principal": "imagens/salada_caesar.jpg",
+      "descricao_breve": "A salada mais famosa do mundo, com molho cremoso e croutons.",
+      "descricao_completa": "Uma salada refrescante e completa. A combinação de alface romana crocante, molho caesar caseiro, parmesão e croutons é perfeita.",
       "ingredientes": [
         "1 pé de alface romana",
         "1 xícara de croutons",
-        "50g de queijo parmesão ralado na hora",
-        "Para o molho:",
+        "50g de queijo parmesão ralado",
         "1 gema de ovo",
         "1 dente de alho amassado",
-        "1/2 xícara de azeite de oliva",
-        "Suco de 1/2 limão siciliano",
-        "Sal e pimenta do reino a gosto"
+        "1/2 xícara de azeite",
+        "Suco de 1/2 limão"
       ],
-      "preparo": "Lave e seque bem as folhas de alface. Para o molho, em uma tigela, bata a gema com o alho, suco de limão, sal e pimenta. Adicione o azeite em fio, batendo constantemente, até emulsionar e formar um molho cremoso. Rasgue as folhas de alface com as mãos, coloque em uma saladeira, regue com o molho, adicione os croutons e o queijo parmesão. Misture delicadamente e sirva imediatamente.",
+      "preparo": "Lave a alface. Para o molho, bata a gema, alho, limão, sal e pimenta. Adicione o azeite em fio. Misture a alface, o molho, os croutons e o queijo.",
       "tempo_preparo": "20 minutos",
       "rendimento": "3 porções",
       "categoria": "Saladas",
-      "tags": ["salada", "leve", "clássico", "entrada"],
-      "rating": { "value": 4.9, "count": 312 },
-      "destaque": true,
-      "imagem_principal": "imagens/salada_caesar.jpg"
+      "tags": [
+        "salada",
+        "leve",
+        "clássico"
+      ],
+      "rating": {
+        "value": 4.9,
+        "count": 312
+      },
+      "destaque": true
     },
     {
       "id": "4",
       "nome": "Pão de Queijo Mineiro",
+      "imagem_principal": "imagens/pao_de_queijo.jpg",
       "descricao_breve": "A autêntica receita de pão de queijo, crocante por fora e macio por dentro.",
-      "descricao_completa": "Este é o verdadeiro pão de queijo de Minas Gerais. Feito com polvilho azedo e muito queijo, é o acompanhamento perfeito para um café da tarde. A receita é simples e o resultado é delicioso.",
+      "descricao_completa": "Este é o verdadeiro pão de queijo de Minas Gerais. Feito com polvilho azedo e muito queijo, é o acompanhamento perfeito para um café.",
       "ingredientes": [
         "500g de polvilho azedo",
-        "250ml de leite integral",
+        "250ml de leite",
         "100ml de óleo",
         "1 colher de chá de sal",
         "2 ovos",
-        "300g de queijo minas padrão ou meia cura ralado"
+        "300g de queijo minas padrão ralado"
       ],
-      "preparo": "Ferva o leite, o óleo e o sal. Despeje sobre o polvilho em uma tigela e misture bem com uma colher. Deixe a massa amornar. Adicione os ovos um a um, misturando bem após cada adição. Por último, incorpore o queijo ralado e amasse até obter uma massa homogênea que não grude nas mãos. Faça bolinhas e asse em forno pré-aquecido a 200°C por cerca de 25 minutos ou até dourarem.",
+      "preparo": "Ferva o leite, o óleo e o sal. Despeje sobre o polvilho. Deixe amornar. Adicione os ovos e o queijo. Amasse bem. Faça bolinhas e asse em forno pré-aquecido a 200°C por 25 minutos.",
       "tempo_preparo": "50 minutos",
-      "rendimento": "20 pães de queijo",
+      "rendimento": "20 unidades",
       "categoria": "Lanches",
-      "tags": ["pão de queijo", "mineiro", "lanche", "café"],
-      "rating": { "value": 5.0, "count": 540 },
+      "tags": [
+        "pão de queijo",
+        "mineiro",
+        "lanche"
+      ],
+      "rating": {
+        "value": 5,
+        "count": 540
+      },
+      "destaque": false
+    },
+    {
+      "id": "5",
+      "nome": "Lasanha à Bolonhesa",
+      "imagem_principal": "imagens/lasanha.jpg",
+      "descricao_breve": "Camadas de massa, molho à bolonhesa rico e queijo derretido.",
+      "descricao_completa": "Um prato clássico italiano que é sinônimo de comida caseira e conforto. Perfeito para um almoço de domingo em família.",
+      "ingredientes": [
+        "500g de massa de lasanha",
+        "500g de carne moída",
+        "2 latas de tomate pelado",
+        "1 cebola",
+        "2 dentes de alho",
+        "300g de queijo muçarela",
+        "100g de queijo parmesão",
+        "500ml de molho bechamel"
+      ],
+      "preparo": "Refogue alho e cebola, adicione a carne e depois o tomate. Cozinhe por 20 min. Monte as camadas: molho, massa, muçarela, bechamel. Termine com parmesão. Asse por 30 min a 180°C.",
+      "tempo_preparo": "70 minutos",
+      "rendimento": "8 porções",
+      "categoria": "Pratos Principais",
+      "tags": [
+        "massa",
+        "italiano",
+        "carne"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": true
+    },
+    {
+      "id": "6",
+      "nome": "Feijoada Completa",
+      "imagem_principal": "imagens/feijoada.jpg",
+      "descricao_breve": "O prato mais emblemático do Brasil, rico em sabor e tradição.",
+      "descricao_completa": "A feijoada é uma celebração da culinária brasileira, servida tradicionalmente com arroz, couve, farofa e laranja.",
+      "ingredientes": [
+        "1kg de feijão preto",
+        "500g de carne seca",
+        "300g de lombo de porco",
+        "300g de linguiça paio",
+        "200g de bacon",
+        "2 cebolas",
+        "4 dentes de alho",
+        "Folhas de louro"
+      ],
+      "preparo": "Deixe o feijão e as carnes de molho. Cozinhe o feijão com as carnes e o louro na pressão por 50 min. Frite bacon e linguiça, refogue com alho e cebola e junte ao feijão. Cozinhe por mais 30 min.",
+      "tempo_preparo": "3 horas",
+      "rendimento": "10 porções",
+      "categoria": "Pratos Principais",
+      "tags": [
+        "brasileiro",
+        "feijão",
+        "tradicional"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "7",
+      "nome": "Mousse de Maracujá Rápido",
+      "imagem_principal": "imagens/mousse_maracuja.jpg",
+      "descricao_breve": "Uma sobremesa aerada, cremosa e com o azedinho delicioso do maracujá.",
+      "descricao_completa": "A receita de mousse de maracujá mais fácil e rápida que existe. Com apenas 3 ingredientes, você prepara uma sobremesa incrível.",
+      "ingredientes": [
+        "1 lata de leite condensado",
+        "1 lata de creme de leite",
+        "A mesma medida da lata de suco de maracujá"
+      ],
+      "preparo": "Bata todos os ingredientes no liquidificador por 5 minutos. Despeje em uma travessa e leve à geladeira por 2 horas.",
+      "tempo_preparo": "10 minutos + geladeira",
+      "rendimento": "6 porções",
+      "categoria": "Sobremesas",
+      "tags": [
+        "doce",
+        "rápido",
+        "fruta"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "8",
+      "nome": "Coxinha de Frango",
+      "imagem_principal": "imagens/coxinha.jpg",
+      "descricao_breve": "O salgado mais amado do Brasil, com massa de batata e recheio cremoso.",
+      "descricao_completa": "Aprenda a fazer uma coxinha perfeita, com uma massa de batata que derrete na boca e um recheio de frango desfiado.",
+      "ingredientes": [
+        "1kg de frango desfiado",
+        "1kg de batatas cozidas",
+        "Caldo do cozimento do frango",
+        "Manteiga",
+        "Cebola",
+        "Salsinha",
+        "Farinha de trigo",
+        "Farinha de rosca",
+        "Ovos"
+      ],
+      "preparo": "Faça a massa com o caldo, manteiga, batata e farinha. Refogue o recheio de frango. Modele as coxinhas, empane e frite.",
+      "tempo_preparo": "90 minutos",
+      "rendimento": "30 unidades",
+      "categoria": "Lanches",
+      "tags": [
+        "salgado",
+        "festa",
+        "frango"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "9",
+      "nome": "Risoto de Cogumelos",
+      "imagem_principal": "imagens/risoto_cogumelos.jpg",
+      "descricao_breve": "Um risoto cremoso e sofisticado com o sabor terroso dos cogumelos.",
+      "descricao_completa": "O risoto de cogumelos é um prato elegante e cheio de sabor, perfeito para um jantar especial. A cremosidade do arroz arbóreo cria uma experiência inesquecível.",
+      "ingredientes": [
+        "300g de arroz arbóreo",
+        "200g de cogumelos frescos",
+        "1 cebola",
+        "1/2 xícara de vinho branco",
+        "1.5L de caldo de legumes",
+        "100g de parmesão",
+        "2 colheres de manteiga"
+      ],
+      "preparo": "Refogue a cebola, adicione o arroz, o vinho e os cogumelos. Vá adicionando o caldo aos poucos, mexendo sempre. Cozinhe por 18 min. Finalize com manteiga e queijo.",
+      "tempo_preparo": "40 minutos",
+      "rendimento": "4 porções",
+      "categoria": "Pratos Principais",
+      "tags": [
+        "risoto",
+        "italiano",
+        "cogumelos"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "10",
+      "nome": "Strogonoff de Frango",
+      "imagem_principal": "imagens/strogonoff.jpg",
+      "descricao_breve": "Receita clássica e cremosa de strogonoff, perfeita para o dia a dia.",
+      "descricao_completa": "Um prato rápido, fácil e que agrada a todos, servido com arroz branco e batata palha.",
+      "ingredientes": [
+        "1kg de frango em cubos",
+        "2 latas de creme de leite",
+        "Ketchup",
+        "Mostarda",
+        "Champignon"
+      ],
+      "preparo": "Doure o frango. Junte os molhos e o champignon. Incorpore o creme de leite sem deixar ferver.",
+      "tempo_preparo": "25 minutos",
+      "rendimento": "6 porções",
+      "categoria": "Pratos Principais",
+      "tags": [
+        "strogonoff",
+        "frango",
+        "rápido"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "11",
+      "nome": "Pudim de Leite Condensado",
+      "imagem_principal": "imagens/pudim.jpg",
+      "descricao_breve": "A sobremesa mais tradicional e amada do Brasil.",
+      "descricao_completa": "Pudim de leite condensado é a sobremesa que não pode faltar nos almoços de família. Com uma calda de caramelo perfeita e textura cremosa.",
+      "ingredientes": [
+        "1 lata de leite condensado",
+        "A mesma medida de leite",
+        "3 ovos",
+        "1 xícara de açúcar para calda"
+      ],
+      "preparo": "Faça a calda de caramelo. Bata os outros ingredientes no liquidificador. Asse em banho-maria por 1h30min.",
+      "tempo_preparo": "1h 45min",
+      "rendimento": "8 porções",
+      "categoria": "Sobremesas",
+      "tags": [
+        "pudim",
+        "doce",
+        "tradicional"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "12",
+      "nome": "Sopa de Abóbora com Gengibre",
+      "imagem_principal": "imagens/sopa_abobora.jpg",
+      "descricao_breve": "Uma sopa cremosa, nutritiva e com um toque picante de gengibre.",
+      "descricao_completa": "Perfeita para os dias mais frios, esta sopa de abóbora é reconfortante e cheia de sabor.",
+      "ingredientes": [
+        "1kg de abóbora cabotiá",
+        "1 cebola",
+        "Gengibre",
+        "Caldo de legumes"
+      ],
+      "preparo": "Refogue a cebola, a abóbora e o gengibre. Cozinhe no caldo até amaciar. Bata tudo no liquidificador até virar um creme.",
+      "tempo_preparo": "45 minutos",
+      "rendimento": "6 porções",
+      "categoria": "Sopas",
+      "tags": [
+        "sopa",
+        "abóbora",
+        "inverno"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "13",
+      "nome": "Caipirinha de Limão",
+      "imagem_principal": "imagens/caipirinha.jpg",
+      "descricao_breve": "O drink mais famoso do Brasil, refrescante e fácil de fazer.",
+      "descricao_completa": "O drink mais famoso do Brasil, refrescante e fácil de fazer.",
+      "ingredientes": [
+        "1 limão taiti",
+        "2 colheres de açúcar",
+        "50ml de cachaça",
+        "Gelo"
+      ],
+      "preparo": "Macere o limão com o açúcar. Adicione a cachaça e o gelo. Mexa bem.",
+      "tempo_preparo": "5 minutos",
+      "rendimento": "1 copo",
+      "categoria": "Bebidas",
+      "tags": [
+        "Bebidas"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": true
+    },
+    {
+      "id": "14",
+      "nome": "Bacalhoada à Portuguesa",
+      "imagem_principal": "imagens/bacalhoada.jpg",
+      "descricao_breve": "Um prato clássico, saboroso e perfeito para ocasiões especiais.",
+      "descricao_completa": "A bacalhoada une lascas de bacalhau com batatas, pimentões, cebolas, azeitonas e ovos, regado com muito azeite.",
+      "ingredientes": [
+        "1kg de bacalhau dessalgado",
+        "1kg de batatas",
+        "Pimentões",
+        "Cebolas",
+        "Azeitonas",
+        "Ovos cozidos",
+        "Azeite"
+      ],
+      "preparo": "Monte camadas de batata, cebola, bacalhau, pimentões e os outros ingredientes. Regue com muito azeite e asse por 40-50 minutos.",
+      "tempo_preparo": "1h 30min",
+      "rendimento": "6 porções",
+      "categoria": "Pratos Principais",
+      "tags": [
+        "bacalhau",
+        "português",
+        "especial"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "15",
+      "nome": "Quindim",
+      "imagem_principal": "imagens/quindim.jpg",
+      "descricao_breve": "Doce brasileiro com base de coco e uma calda brilhante de gema.",
+      "descricao_completa": "O quindim é uma joia da doçaria brasileira, com cor amarela vibrante e base de coco ralado.",
+      "ingredientes": [
+        "Açúcar",
+        "Coco ralado fresco",
+        "Leite de coco",
+        "12 gemas",
+        "Manteiga"
+      ],
+      "preparo": "Misture os ingredientes. Despeje em forminhas untadas. Asse em banho-maria por 50 minutos.",
+      "tempo_preparo": "1 hora",
+      "rendimento": "12 unidades",
+      "categoria": "Sobremesas",
+      "tags": [
+        "doce",
+        "coco",
+        "brasileiro"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "16",
+      "nome": "Ceviche Clássico",
+      "imagem_principal": "imagens/ceviche.jpg",
+      "descricao_breve": "Peixe branco fresco marinado em suco de limão, pimenta e coentro.",
+      "descricao_completa": "O ceviche é um prato peruano refrescante, leve e 'cozido' na acidez do suco de limão.",
+      "ingredientes": [
+        "500g de peixe branco fresco",
+        "Suco de 4 limões",
+        "Pimenta dedo-de-moça",
+        "Cebola roxa",
+        "Coentro"
+      ],
+      "preparo": "Misture o peixe com o suco de limão e pimenta. Leve à geladeira por 20 min. Adicione cebola e coentro antes de servir.",
+      "tempo_preparo": "30 minutos",
+      "rendimento": "4 porções",
+      "categoria": "Entradas",
+      "tags": [
+        "peixe",
+        "peruano",
+        "refrescante"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "17",
+      "nome": "Salada Grega",
+      "imagem_principal": "imagens/salada_grega.jpg",
+      "descricao_breve": "Uma salada vibrante com tomate, pepino, queijo feta e azeitonas.",
+      "descricao_completa": "A salada grega é a representação do frescor da culinária mediterrânea, combinando vegetais frescos com queijo feta.",
+      "ingredientes": [
+        "Tomate",
+        "Pepino",
+        "Cebola roxa",
+        "200g de queijo feta",
+        "Azeitonas pretas",
+        "Orégano",
+        "Azeite"
+      ],
+      "preparo": "Combine os vegetais, o queijo e as azeitonas. Tempere com azeite, limão e orégano na hora de servir.",
+      "tempo_preparo": "15 minutos",
+      "rendimento": "4 porções",
+      "categoria": "Saladas",
+      "tags": [
+        "salada",
+        "grega",
+        "saudável"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "18",
+      "nome": "Vaca Atolada",
+      "imagem_principal": "imagens/vaca_atolada.jpg",
+      "descricao_breve": "Prato típico mineiro com costela bovina cozida lentamente com mandioca.",
+      "descricao_completa": "A vaca atolada é um clássico da cozinha caipira, um ensopado robusto onde a costela se mistura com a cremosidade da mandioca.",
+      "ingredientes": [
+        "1.5kg de costela bovina",
+        "1kg de mandioca",
+        "Cebola",
+        "Alho",
+        "Tomate",
+        "Cheiro-verde"
+      ],
+      "preparo": "Cozinhe a costela na pressão por 40 min. Adicione a mandioca e cozinhe por mais 20 min até ficar macia.",
+      "tempo_preparo": "1h 30min",
+      "rendimento": "6 porções",
+      "categoria": "Pratos Principais",
+      "tags": [
+        "mineiro",
+        "costela",
+        "mandioca"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": false
+    },
+    {
+      "id": "19",
+      "nome": "Torta Holandesa",
+      "imagem_principal": "imagens/torta_holandesa.jpg",
+      "descricao_breve": "Torta gelada com base de biscoito, creme branco e cobertura de chocolate.",
+      "descricao_completa": "Apesar do nome, a Torta Holandesa é uma criação brasileira elegante e deliciosa, decorada com biscoitos na lateral.",
+      "ingredientes": [
+        "Biscoito maisena",
+        "Manteiga",
+        "Creme de leite",
+        "Açúcar",
+        "Gemas",
+        "Biscoito Calipso",
+        "Chocolate meio amargo"
+      ],
+      "preparo": "Faça a base com biscoito e manteiga. Faça o creme com manteiga, açúcar, gemas e creme de leite. Leve ao freezer. Cubra com ganache de chocolate.",
+      "tempo_preparo": "40 minutos + freezer",
+      "rendimento": "10 porções",
+      "categoria": "Sobremesas",
+      "tags": [
+        "torta",
+        "gelada",
+        "chocolate"
+      ],
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "destaque": true
+    },
+    {
+      "nome": "Moscow Mule",
+      "descricao_breve": "Um drink clássico, refrescante e picante, servido em sua icônica caneca de cobre.",
+      "descricao_completa": "Um drink clássico, refrescante e picante, servido em sua icônica caneca de cobre.",
+      "ingredientes": [
+        "60ml de Vodka",
+        "120ml de Ginger Beer (cerveja de gengibre)",
+        "15ml de suco de limão fresco",
+        "1 fatia de limão para decorar",
+        "Folhas de hortelã para decorar (opcional)",
+        "Gelo"
+      ],
+      "preparo": "Encha uma caneca de cobre com gelo. Adicione a vodka e o suco de limão. Complete com a ginger beer. Mexa suavemente e decore com uma fatia de limão e folhas de hortelã.",
+      "tempo_preparo": "5 minutos",
+      "rendimento": "1 copo",
+      "categoria": "Bebidas",
+      "tags": [
+        "Bebidas"
+      ],
+      "imagem_principal": "imagens/moscow_mule.jpg",
       "destaque": false,
-      "imagem_principal": "imagens/pao_de_queijo.jpg"
+      "rating": {
+        "value": 0,
+        "count": 0
+      },
+      "id": "pj1DoXw"
     }
   ],
   "usuarios": [
@@ -121,12 +600,20 @@
       "admin": false
     },
     {
-      "id": "1762",
-      "nome": "vitor",
+      "nome": "Vitor Marquez",
+      "email": "vitor@email.com",
+      "login": "vitor",
+      "senha": "123",
+      "admin": false,
+      "id": "d044"
+    },
+    {
+      "nome": "Vitor",
       "email": "vitormarquez99@gmail.com",
       "login": "123",
       "senha": "123",
-      "admin": false
+      "admin": false,
+      "id": "pG7M_PF"
     }
   ],
   "favoritos": []

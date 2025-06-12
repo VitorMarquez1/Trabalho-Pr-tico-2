@@ -1,10 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const API_URL = 'http://localhost:3000/receitas';
+    // Usa caminho relativo para a API_URL
+    const API_URL = '/receitas';
     const mainContent = document.getElementById('main-content');
     const usuario = JSON.parse(sessionStorage.getItem('usuarioLogado'));
     let editingId = null; 
 
-    // 1. Verificação de Permissão de Administrador
+    // 1. Verifica Permissões de Administrador
     if (!usuario || !usuario.admin) {
         mainContent.innerHTML = `
             <div class="error-message" style="text-align: center; padding: 40px;">
@@ -16,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return; 
     }
 
-    // 2. Renderiza o HTML do formulário e da tabela se o usuário for admin
+    // 2. Renderiza formulário e tabela para usuários administradores
     mainContent.innerHTML = `
         <h1>Gerenciamento de Receitas</h1>
         <section class="form-container">
@@ -40,12 +41,20 @@ document.addEventListener('DOMContentLoaded', () => {
                     <textarea id="preparo" name="preparo" rows="5" required></textarea>
                 </div>
                 <div class="form-group">
+                    <label for="tempo_preparo">Tempo de Preparo:</label>
+                    <input type="text" id="tempo_preparo" name="tempo_preparo" placeholder="Ex: 45 minutos">
+                </div>
+                <div class="form-group">
+                    <label for="rendimento">Rendimento:</label>
+                    <input type="text" id="rendimento" name="rendimento" placeholder="Ex: 8 porções">
+                </div>
+                <div class="form-group">
                     <label for="categoria">Categoria:</label>
                     <input type="text" id="categoria" name="categoria" required>
                 </div>
                 <div class="form-group">
-                    <label for="imagem_principal">URL da Imagem Principal:</label>
-                    <input type="url" id="imagem_principal" name="imagem_principal" placeholder="https://exemplo.com/imagem.jpg">
+                    <label for="imagem_principal">Caminho da Imagem Principal:</label>
+                    <input type="text" id="imagem_principal" name="imagem_principal" placeholder="Ex: imagens/nome_da_foto.jpg">
                 </div>
                 <div class="form-group">
                     <input type="checkbox" id="destaque" name="destaque">
@@ -72,7 +81,7 @@ document.addEventListener('DOMContentLoaded', () => {
         </section>
     `;
 
-    // 3. Referências aos elementos do DOM
+    // 3. Referências aos Elementos do DOM
     const form = document.getElementById('formCadastroReceita');
     const formTitle = document.getElementById('form-title');
     const submitButton = document.getElementById('submit-button');
@@ -114,6 +123,8 @@ document.addEventListener('DOMContentLoaded', () => {
             form.descricao_breve.value = receita.descricao_breve;
             form.ingredientes.value = (receita.ingredientes || []).join('\n');
             form.preparo.value = receita.preparo;
+            form.tempo_preparo.value = receita.tempo_preparo || ''; // Adicionado
+            form.rendimento.value = receita.rendimento || '';     // Adicionado
             form.categoria.value = receita.categoria;
             form.imagem_principal.value = receita.imagem_principal;
             form.destaque.checked = receita.destaque;
@@ -125,6 +136,7 @@ document.addEventListener('DOMContentLoaded', () => {
             window.scrollTo(0, 0); 
         } catch (error) {
             console.error('Erro ao buscar receita para edição:', error);
+            alert('Erro ao carregar dados da receita para edição.');
         }
     };
 
@@ -157,17 +169,23 @@ document.addEventListener('DOMContentLoaded', () => {
         const dadosReceita = {
             nome: form.nome.value,
             descricao_breve: form.descricao_breve.value,
+            descricao_completa: form.descricao_breve.value, 
             ingredientes: form.ingredientes.value.split('\n').filter(line => line.trim() !== ''),
             preparo: form.preparo.value,
+            tempo_preparo: form.tempo_preparo.value, // Adicionado
+            rendimento: form.rendimento.value,         // Adicionado
             categoria: form.categoria.value,
+            tags: form.categoria.value.split(/, | /).map(t => t.trim()),
             imagem_principal: form.imagem_principal.value,
             destaque: form.destaque.checked,
-            descricao_completa: form.descricao_breve.value, 
-            tags: form.categoria.value.split(',').map(t => t.trim()),
-            rating: { value: 0, count: 0 }
+            rating: editingId ? undefined : { value: 0, count: 0 }
         };
+        
+        if (dadosReceita.rating === undefined) {
+           delete dadosReceita.rating;
+        }
 
-        const method = editingId ? 'PUT' : 'POST';
+        const method = editingId ? 'PATCH' : 'POST';
         const url = editingId ? `${API_URL}/${editingId}` : API_URL;
 
         try {
